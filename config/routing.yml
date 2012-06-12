@@ -1,0 +1,19 @@
+welcome:
+  type: get
+  pattern: /
+  controler: main
+  action: index
+
+api_test:
+  type: get
+  pattern: /api/test
+  controler: api
+  action: test
+
+any:
+  type: get
+  pattern: /{any}
+  controler: main
+  action: index
+  requirements:
+    any: ".+"
