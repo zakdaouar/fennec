@@ -1,41 +1,17 @@
 define([
   // Libs
   "jquery",
-  "lodash",
+  "underscore",
   "backbone"
 ],
 
 function($, _, Backbone) {
   
-  var JST = window.JST = window.JST || {};
+  var App = {
+    root: '/fennec/',
+    layout: $('#main')
+  };
 
-  return _.extend({
+  return App;
 
-    fetchTemplate: function(path) {
-      path += ".html";
-
-      if (!JST[path]) {
-        $.ajax({
-          url: "/" + path,
-          dataType: "text",
-          cache: false,
-          async: false,
-
-          success: function(contents) {
-            JST[path] = _.template(contents);
-          }
-        });
-      }
-
-      return JST[path];
-    },
-
-    module: function(additionalProps) {
-      return _.extend({ Views: {} }, additionalProps);
-    },
-
-    // Change this to handle routes correctly
-    root: '/~riad/fennec/web/index.php/'
-
-  }, Backbone.Events);
 });

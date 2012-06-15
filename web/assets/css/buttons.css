@@ -1,0 +1,41 @@
+.button {
+    background: #F4B617;
+    background: -moz-linear-gradient( top, #F4B617 0%, #ED950D);
+    background: -webkit-gradient( linear, left top, left bottom, from(#F4B617), to(#ED950D));
+
+    padding:7px;
+    width:70px;
+    color:#4c4c4c;
+    text-shadow:0 1px 1px rgba(255,255,255,0.8);
+    font-weight:bold;
+    border:1px solid #cf9c13;
+    position:relative;
+    -moz-box-shadow:0 1px 3px rgba(255, 255, 255, 0.3) inset, 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow:0 1px 3px rgba(255, 255, 255, 0.3) inset, 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -o-box-shadow:0 1px 3px rgba(255, 255, 255, 0.3) inset, 1px 1px 1px rgba(0, 0, 0, 0.3);
+    box-shadow:0 1px 3px rgba(255, 255, 255, 0.3) inset, 1px 1px 1px rgba(0, 0, 0, 0.3);
+    -moz-transition:border 0.2s, background 0.2s, box-shadow 0.2s;
+    -webkit-transition:border 0.2s, background 0.2s, box-shadow 0.2s;
+    -o-transition:border 0.2s, background 0.2s, box-shadow 0.2s;
+    transition:border 0.2s, background 0.2s, box-shadow 0.2s;
+    float:right;
+}
+
+.button:hover {
+    background-color:#f3b817;
+    border-color:#b58910;
+    -moz-box-shadow:0 1px 3px rgba(255, 255, 255, 0.3) inset, 2px 2px 2px rgba(0, 0, 0, 0.32);
+    -webkit-box-shadow:0 1px 3px rgba(255, 255, 255, 0.3) inset, 2px 2px 2px rgba(0, 0, 0, 0.32);
+    -o-box-shadow:0 1px 3px rgba(255, 255, 255, 0.3) inset, 2px 2px 2px rgba(0, 0, 0, 0.32);
+    box-shadow:0 1px 3px rgba(255, 255, 255, 0.3) inset, 2px 2px 2px rgba(0, 0, 0, 0.32);
+}
+
+.button:active {
+    background-color:#e0aa14;
+    -moz-box-shadow:0 1px 3px rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(0, 0, 0, 0.35);
+    -webkit-box-shadow:0 1px 3px rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(0, 0, 0, 0.35);
+    -o-box-shadow:0 1px 3px rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(0, 0, 0, 0.35);
+    box-shadow:0 1px 3px rgba(255, 255, 255, 0.3) inset, 0 0 2px rgba(0, 0, 0, 0.35);
+    top:1px;
+    left:1px;
+}

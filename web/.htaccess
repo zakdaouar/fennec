@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+    Options +FollowSymLinks
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteBase /fennec
+    RewriteRule ^(.*)$ index.php [L]
+</IfModule>

@@ -4,23 +4,24 @@ require([
 
   // Libs
   "jquery",
-  "backbone"
+  "underscore",
+  "backbone",
+
+  // views
+  "views/main/loginView"
 ],
 
-function(app, $, Backbone) {
+function(app, $, _, Backbone, LoginView) {
 
   var Router = Backbone.Router.extend({
     routes: {
-      "": "index",
-      "test": "test"
+      "": "index"
     },
 
     index: function() {
-      console.log('index');
-    },
-
-    test: function() {
-      console.log('test');
+      var view = new LoginView();
+      view.render();
+      app.layout.append(view.el);
     }
 
   });

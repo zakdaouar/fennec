@@ -1,0 +1,28 @@
+.text-input {
+    background:#f9f6fa;
+    color:#a1a1a1;
+    padding:7px;
+    width:200px;
+    margin-right:4px;
+    font-family:Arial, sans-serif;
+    font-weight:bold;
+    border:1px solid #ccc;
+    -moz-box-shadow:0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -webkit-box-shadow:0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    -o-box-shadow:0 1px 3px rgba(0, 0, 0, 0.2) inset;
+    box-shadow:0 1px 3px rgba(0, 0, 0, 0.2) inset;
+}
+
+.text-input:focus {
+    border-color:#aaa;
+}
+
+.text-input.error {
+    background-color:#fadcdc;
+    border-color:#ba8282;
+    color:#a18d8d;
+}
+
+.text-input.error:focus {
+    border-color:#996b6b;
+}

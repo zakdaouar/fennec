@@ -10,8 +10,16 @@ api_test:
   controler: api
   action: test
 
-any:
+any_get:
   type: get
+  pattern: /{any}
+  controler: main
+  action: index
+  requirements:
+    any: ".+"
+
+any_post:
+  type: post
   pattern: /{any}
   controler: main
   action: index
